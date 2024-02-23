@@ -14,7 +14,7 @@ Feature: Testing FTB REST API AIRCRAFTS resource
     Then aircraft data to be manufacturer='HAHA' and model='UHU' and number of seats=5
 
 
-    Scenario: Get specific aircraft data by its ID
+    Scenario: Get specific aircraft data by its ID (with NULL in number os seats)
       Given FTB is up and running and the tests are configured
       When client gets details of Aircraft id=1165
       Then aircraft data to be manufacturer='HAHA' and model='UHU' and number of seats=5
